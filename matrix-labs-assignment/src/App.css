@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  position: relative;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  justify-content: space-between;
+}
+.top-mobile {
+  display: none;
+}
+.upper-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.search {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  border-radius: 18px;
+  padding: .5rem 1rem;
+  border: 1px solid #FFF;
+}
+.search input {
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  padding: .25rem;
+  outline: none;
+}
+.search input::placeholder {
+  color: #FFF;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 1rem;
+  font-style: normal;
+}
+.btn-connect {
+  font-family: Poppins;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #FFF;
+  background: linear-gradient(131deg, #7C0F35 0%, #581266 100%);
+  border: none;
+  font-weight: 500;
+  padding: .5rem 1rem;
+  border-radius: 20px;
+}
+.bg-pic {
+  background-image: url('../nftify-background.png');
+  width:100%;
+  min-height: 99vh;
+  inset: 0;
+  position: fixed;
+  background-size: cover, 49%;
+  background-repeat: no-repeat;
+  background-position: center, 50% 50%;
+}
+.bg-pic .bg-pic-next {
+  opacity: .9;
+  position: absolute;
+  inset: 0;
+  background: #000000af;
+}
+.container {
+  padding-bottom: 5rem;
+  padding: 2rem;
+}
+
+.search-header {
+  font-style: normal;
+  font-size: 26px;
+  color: white;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: Work Sans;
+}
+.card-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.footer {
+  width: 100%;
+  height: 3rem;
+  background-color: #F30050;
+  bottom: 0;
+  position: fixed;
+}
+
+@media only screen and (max-width:480px) {
+  .navbar {
+    display: none;
+  }
+  .top-mobile {
+    display: grid;
+  }
+  .app .top-sidebar {
+    display: none;
+  }
+  .app {
+    grid-template-columns: 1fr;
+  }
+  .search {
+    width: 100%;
+    margin: auto;
+  }
+  .hamberger-menu {
+    appearance: none;
+    opacity: 0;
+  }
+  
+  .menu-list {
+    padding: 1rem 0;
+    display: none;
+  }
+  .top-mobile:has(.hamberger-menu:checked) .menu-list {
+    display: block;
+  }
+  
+}
+
+
+ 

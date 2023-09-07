@@ -1,0 +1,52 @@
+.top-sidebar {
+     flex-direction: column;
+     background: #292929;
+     border-radius: 0px 32px 32px 0px;
+     position: sticky;
+     display: flex;
+     height: 100vh;
+     top: 0;
+     left: 0;
+}
+.logo {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+}
+li {
+     list-style: none;
+}
+
+a {
+     text-decoration: none;
+}
+
+.header-sidebar {
+     padding: 1rem 2rem;
+}
+.menu-list {
+     flex: 1;
+}
+
+.menu-item {
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+     font-family: Work Sans;
+     font-size: clamp(1rem, 5vw, 1.3rem);
+     font-weight: 500;
+     line-height: 28px;
+     font-style: normal;
+     gap: 1rem;
+     color: white;
+     padding: 1rem 2rem;
+}
+
+.menu-item.active {
+     background: #F30050;
+}
+.social-icon-group {
+     display: flex;
+     padding: 5rem 2rem;
+     gap: 1rem;
+}
